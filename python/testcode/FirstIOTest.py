@@ -9,3 +9,11 @@ GPIO.setup(topSocket, GPIO.OUT)
 
 while True:
     GPIO.output(bottomSocket, GPIO.HIGH)
+    time.sleep(5)
+    GPIO.output(topSocket, GPIO.HIGH)
+    time.sleep(5)
+    GPIO.output(bottomSocket, GPIO.LOW)
+    time.sleep(5)
+    GPIO.output(topSocket, GPIO.LOW)
+    time.sleep(5)
+    
